@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <Button
+        android:id="@+id/record_video_button"
+        android:layout_width="113dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="26dp"
+        android:background="#4c06ed"
+        android:textColor="#fff"
+        android:text="@string/record_button"
+        app:layout_constraintBottom_toTopOf="@+id/heart_rate_text"
+        app:layout_constraintEnd_toStartOf="@+id/measure_heart_rate_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/upload_symptoms_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="35dp"
+        android:text="Measure symptoms"
+        android:background="#4c06ed"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breathing_rate_display" />
+
+    <Button
+        android:id="@+id/measure_breathing_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/measure_breathing"
+        android:background="#4c06ed"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respiration_rate_desc" />
+
+    <Button
+        android:id="@+id/upload_signs_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="35dp"
+        android:text="@string/upload_signs"
+        android:background="#1aeb06"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_symptoms_button" />
+
+    <Button
+        android:id="@+id/measure_heart_rate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="25dp"
+        android:background="#4c06ed"
+        android:textColor="#fff"
+        android:text="@string/measure_pulse"
+        app:layout_constraintBottom_toTopOf="@+id/heart_rate_display"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/heart_rate_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="116dp"
+        android:text="0.00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/heart_rate_text"
+        app:layout_constraintTop_toBottomOf="@+id/measure_heart_rate_button" />
+
+    <TextView
+        android:id="@+id/breathing_rate_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="117dp"
+        android:text="0.00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respiration_rate_desc" />
+
+    <TextView
+        android:id="@+id/heart_rate_text"
+        android:layout_width="122dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:text="The heart rate is : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_video_button" />
+
+    <TextView
+        android:id="@+id/respiration_rate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="38dp"
+        android:text="The respiration rate is:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/measure_breathing_button" />
+
+    <TextView
+        android:id="@+id/heart_rate_desc"
+        android:layout_width="361dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="86dp"
+        android:text="Click on record video and record a video of your fingertip with the flash on for 45 seconds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/respiration_rate_desc"
+        android:layout_width="361dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="18dp"
+        android:text="Click on measure respiratory rate and keep phone on your chest for about 45 seconds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heart_rate_text" />
+
+    <TextView
+        android:id="@+id/symptoms_description"
+        android:layout_width="168dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="43dp"
+        android:text="To measure the symptoms and rate then click on Measure symptoms button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respiration_rate_text" />
+
+    <TextView
+        android:id="@+id/upload_signs_desc"
+        android:layout_width="178dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="46dp"
+        android:text='Once all the steps are done, click on "Upload signs" button to upload the data to database'
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptoms_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

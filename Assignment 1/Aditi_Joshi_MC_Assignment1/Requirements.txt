@@ -1,0 +1,14 @@
+Steps to Execute Code:
+1. Import the project in Android Studio
+2. Make sure you have updated Android version and Developer options are turned on in the settings
+3. Then build the project and run it on emulator/android phone
+4. When the app gets installed on the phone, give the necessary permissions to: Media and Files both read and write access, access to camera
+5. The first step will be to record a video of finger tip, make sure you turn on the flash light when the video is recording. The video will be of 45 seconds.
+6. Then click on measure heart rate button, it will calculate the heart rate and then display the readings.
+7. Now lay down and keep phone on your chest and calculate the respiration rate, keep the phone for 45 seconds.
+8. After 45 seconds, the respiration rate will be calculated and displayed on the textview on the home screen
+9. Now you can record the symptoms for Covid out of 10 and rate yourself out of 5 stars.
+10. Once you rate your symptoms, click on save button and and go back to home screen
+11. Now to save the data to database, click on Upload signs button. By doing this the data will get stored to the database.
+12. To inspect the data, check the App Inspector tab in Android Studio. Under the "joshi" dataset entries will be created for the run which includes the heart rate, respiration rate and the symptoms and their ratings.
+13. If the app crashes when checking for heart rate, make sure all the permissions are given to the application correctly. And then try to rerun the application.
